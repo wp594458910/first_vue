@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+		<title></title>
+	</head>
+
+	<body>
+		<div id="vue_det">
+			<h1>site:{{site}}</h1>
+			<h1>url:{{url}}</h1>
+			<h1>{{details()}}</h1>
+		</div>
+		<script type="text/javascript">
+			var vue = new Vue({
+				el: '#vue_det',
+				data: {
+					site: "菜鸟教程",
+					url: "www.feastcoding.cn"
+				},
+				methods: {
+					details: function() {
+						return this.site + "- 学的不仅是技术，是梦想";
+					}
+				}
+			})
+			
+		</script>
+	</body>
+
+</html>
